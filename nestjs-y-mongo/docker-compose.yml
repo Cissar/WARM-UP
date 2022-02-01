@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  cliente-angular:
+    container_name: cliente-angular
+    build:
+      context: ../cliente
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    networks:
+      - app-net 
+  backend:
+    container_name: backend-core
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - app-net
+    depends_on:
+      - bd
+  bd:
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - app-net      
+networks:
+  app-net:
+
+
+  

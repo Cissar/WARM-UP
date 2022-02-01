@@ -1,0 +1,71 @@
+/* ESTILO CONTENEDOR*/
+div {
+    background-color: #fff;
+    border: 1px #ccc;
+
+    align-tracks: 5em;
+    
+
+  }
+  
+  div:hover {
+    background-color: #fafafa;
+  }
+
+  /* ESTILOS ESPECIFICOS */
+
+.TT{  /* ESTILO TITULO */
+    font-size: 13px;
+    color: #333;
+    display:inline-block;
+    margin: 5px;
+
+  }
+  .Time{  /* ESTILO TIME */
+    font-size: 13px;
+    color: #333;
+    display:inline-block;
+    margin-left:65em;
+    margin-right: 10px;
+
+  }
+
+.Author{  /* ESTILO AUTHOR */
+    font-weight: 12px;
+    color: #999;
+    display:inline-block;
+    margin-left: 5em;
+    margin-right: 10px;
+
+
+  }
+
+  .Position{
+    display:inline-block;
+    margin-left: 80em;
+    
+  }
+
+  .Boton{  /* ESTILO AUTHOR */
+
+    display:inline-block;
+    background-color: black;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+  
+  }
+
+
+  .Boton:hover {/* ESTILOS BOTON ELIMINAR */
+    background-color: #3e4144;
+    list-style:none;
+    
+  }
+
+  
+  
